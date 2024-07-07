@@ -1,7 +1,7 @@
-![Banner](assets/Literalura.jpg)
 
 # 📙Literalura #
 Primer Challenge de programa ONE G6 para Backend
+![Banner](assets/Literalura.jpg)
 
 ## 📄 Resumen ##
 El challenge pretende consumir datos de la API de Gutendex. 
@@ -10,6 +10,9 @@ El challenge pretende consumir datos de la API de Gutendex.
 3. Se Muestran los autores en la Base de datos local.
 4. Se Muestran los autores vivos en determinado año.
 5. Se buscan los libros por idiomas.
+
+   _El menú principal._
+   ![Menú principal](assets/01.jpg)
 
 ## 1. Buscar libros en Gutendex 🔎.
 - Se pide al usuario el libro a buscar.
@@ -23,11 +26,21 @@ Se consulta en la base de datos de autores si el autor del libro existe en la Ba
 - Consultar si existe el libro.
 Se busca el libro en la base de datos, si existe se devuelve el mensaje *"Libro ya existe"*, sino, se guarda en la BD.
 
+_Ejemplo de búsqueda._
+   ![Menú principal](assets/02.jpg)
+
+
 ## 2. Muestra los elementos en la base de datos local 📝.
 Mediante un findAll() aplicado a la base de datos de libros desde el repositorio de Libros se obtienen todos los libros, para despues mostrarlos con un forEach().
 
+_Ejemplo de consuta en la BD._
+   ![Menú principal](assets/03.jpg)
+
 ## 3. Muestra los autores en la Base de datos local 🙋🏾. 
 Mediante un findAll() aplicado a la base de datos de autores desde el repositorio de Libros se obtienen todos los libros, para despues mostrarlos con un forEach().
+
+_Ejemplo de consulta de autores en BD._
+   ![Menú principal](assets/04.jpg)
 
 ## 4. Muestra los autores vivos en determinado año 🤹🏿‍♂️.
 -Se pide el año de búsqueda.
@@ -37,12 +50,16 @@ Hace uso de un @Query para cosulta de los registros con año de Nacimiento mayor
 -Mostar resultados
 Si se encotraron autores del año _Buscado,  se listan, sino, se lanza mensaje de no encotrado nunguna autro
 
+_Ejemplo de autores vivos por año._
+   ![Menú principal](assets/05.jpg)
+   
 ## 5. Buscar los libros por idiomas 🇲🇽.
 - Se muestra un submenú para mostrar los idiomas disponibles
 Se pide al usuario que ingrese una opción de búsqueda.   
 - Se buscan los libros por idioma.
 Mendiante un Query se busca en la base de datos y se almacenan en una lista los libro sencontrados del idioma buscado.
  
-
+_Ejemplo de búsqueda por idioma._
+   ![Menú principal](assets/06.jpg)
 
 
